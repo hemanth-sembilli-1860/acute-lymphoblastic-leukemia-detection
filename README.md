@@ -1,31 +1,18 @@
 [![IEEE Published](https://img.shields.io/badge/IEEE-Published-blue)](https://doi.org/10.1109/RAEEUCCI67649.2026.11504871)
-# Acute Lymphoblastic Leukemia Detection Using FCM Segmentation + EfficientNetB4 + XGBoost
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange)](https://www.tensorflow.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-green)](https://xgboost.readthedocs.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This project presents a hybrid machine learning pipeline for detecting **Acute Lymphoblastic Leukemia (ALL)** from blood smear images.  
-It combines:
+# Acute Lymphoblastic Leukemia Detection Using FCM Segmentation, EfficientNetB4 and XGBoost
 
-- **Fuzzy C-Means (FCM) segmentation**
-- **EfficientNetB4 deep feature extraction**
-- **GPU-accelerated XGBoost classification**
-- **Interpretability via qualitative error analysis**
+This repository contains the **official implementation** of our **IEEE-published research** on automated **Acute Lymphoblastic Leukemia (ALL)** detection from microscopic blood smear images.
 
-###🎯 Final Test Accuracy: **95.53%**
-
----
-
-##📌 1. Dataset
-- **Blood Cell Cancer (ALL 4-Class)**  
-  https://www.kaggle.com/datasets/mohammadamireshraghi/blood-cell-cancer-all-4class  
-- Used only for **research / academic / educational** purposes.
-
-Classes converted into:
-- **0 → Benign**
-- **1 → Malignant (Early Pre-B, Pre-B, Pro-B)**
+The proposed hybrid framework combines **Fuzzy C-Means (FCM) Segmentation**, **EfficientNetB4 Deep Feature Extraction**, and **GPU-Accelerated XGBoost Classification** to accurately distinguish **Benign** and **Malignant** blood smear samples.
 
 ---
-## 📄 Published Research
 
-This repository contains the official implementation of our published IEEE research paper.
+# 📄 Published Research
 
 **Title**
 
@@ -43,103 +30,183 @@ https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
 
 https://ieeexplore.ieee.org/document/11504871
 
-##📌 2. Pipeline Overview
+---
 
-Raw Image
-↓
-FCM Segmentation
-↓
-EfficientNetB4 Feature Extraction
-↓
-XGBoost Classifier
-↓
-Benign / Malignant Prediction
+# 📊 Project Highlights
 
+- 🎯 Test Accuracy: **95.53%**
+- 🧠 EfficientNetB4 for Deep Feature Extraction
+- ⚡ GPU-Accelerated XGBoost Classification
+- 🔬 Fuzzy C-Means Image Segmentation
+- 🩸 Binary Classification (Benign vs Malignant)
+- 📄 Official IEEE Published Research
+- 🐍 Developed using Python, TensorFlow, Scikit-learn and XGBoost
 
 ---
 
-## 📌 3. Features of the Model
+# 📌 Dataset
 
-✔ Unsupervised segmentation using Fuzzy C-Means  
-✔ Pretrained EfficientNetB4 for robust features  
-✔ XGBoost for efficient binary classification  
-✔ GPU acceleration  
-✔ Training & validation curves  
-✔ Confusion matrix + metrics  
-✔ TP / FP / TN / FN qualitative visualizations  
+**Dataset Used**
+
+Blood Cell Cancer (ALL 4-Class)
+
+https://www.kaggle.com/datasets/mohammadamireshraghi/blood-cell-cancer-all-4class
+
+This dataset is used strictly for **research, educational and academic purposes**.
+
+### Class Mapping
+
+| Original Class | Converted Label |
+|---------------|-----------------|
+| Benign | 0 |
+| Early Pre-B | 1 |
+| Pre-B | 1 |
+| Pro-B | 1 |
 
 ---
 
-## 📌 4. How to Run
+# ⚙️ Methodology
 
-### Install Dependencies
+The proposed pipeline consists of the following stages:
+
+1. Image Preprocessing
+2. Fuzzy C-Means (FCM) Segmentation
+3. Deep Feature Extraction using EfficientNetB4
+4. Feature Classification using GPU-Accelerated XGBoost
+5. Performance Evaluation using Classification Metrics
+6. Qualitative Error Analysis
+
+---
+
+# 🚀 Features
+
+- Fuzzy C-Means based nucleus segmentation
+- Transfer Learning using EfficientNetB4
+- GPU Accelerated XGBoost Training
+- Binary Classification Pipeline
+- Precision, Recall, F1-Score Evaluation
+- Confusion Matrix Generation
+- Qualitative Prediction Analysis
+- End-to-End Reproducible Workflow
+
+---
+
+# 💻 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ALL-Detection-EfficientNet-XGBoost.git
+
+cd ALL-Detection-EfficientNet-XGBoost
+```
+
+Install the required packages
+
+```bash
 pip install -r requirements.txt
-
-
-### Run the Notebook
-Open:
-
-
-segmentation_and_classification.ipynb
-
-
-All steps are included for segmentation, feature extraction, training, and evaluation.
+```
 
 ---
 
-## 📌 5. Results
+# ▶️ Usage
 
-### ✔ Final Accuracy: **95.53%**
+Open the notebook
 
-The model prints a detailed classification report including:
+```text
+segmentation_and_classification.ipynb
+```
+
+The notebook includes:
+
+- Data Preprocessing
+- FCM Segmentation
+- EfficientNetB4 Feature Extraction
+- XGBoost Model Training
+- Model Evaluation
+- Performance Analysis
+
+---
+
+# 📈 Performance
+
+**Final Test Accuracy**
+
+**95.53%**
+
+Evaluation Metrics include:
+
+- Accuracy
 - Precision
 - Recall
-- F1-score
-- Support
+- F1-Score
+- Confusion Matrix
+- Classification Report
 
-A qualitative visualization of predictions (TP, FP, FN, TN examples)  
-has been saved as:
+---
 
-results/qualitative_analysis.png
-results/segmentation_examples/
+# 📂 Repository Structure
 
-## 📌 6. File Structure
-
-
-
-ALL_Leukemia_Detection_Model/
-│
-├── results/
-│ ├── qualitative_analysis.png
-│ └── segmentation_examples/
+```
+ALL-Detection-EfficientNet-XGBoost/
 │
 ├── src/
-│ ├── fcm_segmentation.py
-│ ├── feature_extraction.py
-│ ├── xgboost_classifier.py
-│ └── utils.py
+│   ├── preprocessing.py
+│   ├── fcm_segmentation.py
+│   ├── feature_extraction.py
+│   ├── xgboost_classifier.py
+│   └── utils.py
+│
+├── results/
 │
 ├── segmentation_and_classification.ipynb
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-
-
----
-
-## 📌 7. License
-Licensed under **MIT License** (see `LICENSE` file).
+```
 
 ---
 
-## 📌 8. Disclaimer
-This project is for **research and educational purposes only**.  
-It is **NOT** a clinical diagnostic tool.
+# 📚 Citation
+
+If you use this repository in your research, please consider citing our paper.
+
+```
+Effective Hybrid Pipeline for Acute Lymphoblastic Leukemia Detection using FCM Segmentation, EfficientNet Features, and XGBoost Classification.
+
+2026 5th International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)
+
+DOI:
+https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
+```
 
 ---
 
+# 📜 License
 
-## 📌 9. Author
-**Tagore**  
-Machine Learning Student  
-Open to internships & freelance ML work.
+This project is licensed under the **MIT License**.
+
+---
+
+# ⚠️ Disclaimer
+
+This repository is intended **solely for research, educational and academic purposes**.
+
+It is **not** intended for clinical diagnosis or medical decision-making.
+
+---
+
+# 👨‍💻 Author
+
+**Tagore**
+
+B.Tech Computer Science and Engineering  
+Machine Learning | Deep Learning | Computer Vision
+
+Open to **Machine Learning Engineer**, **AI Engineer**, and **Research Engineer** opportunities.
+
+GitHub: https://github.com/tagorekanuri
+
+LinkedIn: https://linkedin.com/in/tagorekanuri
+
+Email: tagore.kanuri@gmail.com
