@@ -1,3 +1,4 @@
+[![IEEE Xplore](https://img.shields.io/badge/IEEE-Published-blue)](https://ieeexplore.ieee.org/document/xxxxxxxx)
 # Acute Lymphoblastic Leukemia Detection Using FCM Segmentation + EfficientNetB4 + XGBoost
 
 This project presents a hybrid machine learning pipeline for detecting **Acute Lymphoblastic Leukemia (ALL)** from blood smear images.  
