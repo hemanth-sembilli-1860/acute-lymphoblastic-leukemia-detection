@@ -119,6 +119,27 @@ It is **NOT** a clinical diagnostic tool.
 
 ---
 
+## 📄 Published Research
+
+This repository contains the official implementation of our published IEEE research paper.
+
+**Title**
+
+**Effective Hybrid Pipeline for Acute Lymphoblastic Leukemia Detection using FCM Segmentation, EfficientNet Features, and XGBoost Classification**
+
+**Conference**
+
+2026 5th International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)
+
+**DOI**
+
+https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
+
+**IEEE Xplore**
+
+https://ieeexplore.ieee.org/document/11504871
+
+
 ## 📌 9. Author
 **Tagore**  
 Machine Learning Student  
