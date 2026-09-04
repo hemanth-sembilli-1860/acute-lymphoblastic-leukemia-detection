@@ -6,7 +6,7 @@
 
 # Acute Lymphoblastic Leukemia Detection Using FCM Segmentation, EfficientNetB4 and XGBoost
 
-This repository contains the **official implementation** of our **IEEE-published research** on automated **Acute Lymphoblastic Leukemia (ALL)** detection from microscopic blood smear images.
+This repository contains the implementation of our **IEEE-published research** on automated **Acute Lymphoblastic Leukemia (ALL)** detection from microscopic blood smear images.
 
 The proposed hybrid framework combines **Fuzzy C-Means (FCM) Segmentation**, **EfficientNetB4 Deep Feature Extraction**, and **GPU-Accelerated XGBoost Classification** to accurately distinguish **Benign** and **Malignant** blood smear samples.
 
@@ -29,6 +29,16 @@ https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
 **IEEE Xplore**
 
 https://ieeexplore.ieee.org/document/11504871
+
+---
+
+# 👥 Authors
+
+This research was conducted collaboratively by three authors:
+
+- **Tagore Kanuri** — Main Author
+- **Hemanth Sembilli** — Co-Author
+- **John Annish** — Co-Author
 
 ---
 
@@ -82,7 +92,7 @@ The proposed pipeline consists of the following stages:
 
 - Fuzzy C-Means based nucleus segmentation
 - Transfer Learning using EfficientNetB4
-- GPU Accelerated XGBoost Training
+- GPU-Accelerated XGBoost Training
 - Binary Classification Pipeline
 - Precision, Recall, F1-Score Evaluation
 - Confusion Matrix Generation
@@ -93,29 +103,22 @@ The proposed pipeline consists of the following stages:
 
 # 💻 Installation
 
-Clone the repository
+Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/ALL-Detection-EfficientNet-XGBoost.git
+    git clone https://github.com/hemanth-sembilli-1860/acute-lymphoblastic-leukemia-detection
+    cd ALL-Detection-EfficientNet-XGBoost
 
-cd ALL-Detection-EfficientNet-XGBoost
-```
+Install the required packages:
 
-Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
+    pip install -r requirements.txt
 
 ---
 
 # ▶️ Usage
 
-Open the notebook
+Open the notebook:
 
-```text
-segmentation_and_classification.ipynb
-```
+    segmentation_and_classification.ipynb
 
 The notebook includes:
 
@@ -147,23 +150,27 @@ Evaluation Metrics include:
 
 # 📂 Repository Structure
 
-```
-ALL-Detection-EfficientNet-XGBoost/
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── fcm_segmentation.py
-│   ├── feature_extraction.py
-│   ├── xgboost_classifier.py
-│   └── utils.py
-│
-├── results/
-│
-├── segmentation_and_classification.ipynb
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
+    ALL-Detection-EfficientNet-XGBoost/
+    │
+    ├── src/
+    │   ├── preprocessing.py
+    │   ├── fcm_segmentation.py
+    │   ├── feature_extraction.py
+    │   ├── xgboost_classifier.py
+    │   └── utils.py
+    │
+    ├── results/
+    │
+    ├── segmentation_and_classification.ipynb
+    ├── requirements.txt
+    ├── LICENSE
+    └── README.md
+
+---
+
+# 🤝 My Contribution
+
+I contributed to this research project as a **co-author**, participating in the collaborative research, implementation, experimentation, evaluation, analysis, and documentation of the proposed approach.
 
 ---
 
@@ -171,14 +178,12 @@ ALL-Detection-EfficientNet-XGBoost/
 
 If you use this repository in your research, please consider citing our paper.
 
-```
-Effective Hybrid Pipeline for Acute Lymphoblastic Leukemia Detection using FCM Segmentation, EfficientNet Features, and XGBoost Classification.
+    Effective Hybrid Pipeline for Acute Lymphoblastic Leukemia Detection using FCM Segmentation, EfficientNet Features, and XGBoost Classification.
 
-2026 5th International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)
+    2026 5th International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational Intelligence (RAEEUCCI)
 
-DOI:
-https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
-```
+    DOI:
+    https://doi.org/10.1109/RAEEUCCI67649.2026.11504871
 
 ---
 
@@ -196,17 +201,13 @@ It is **not** intended for clinical diagnosis or medical decision-making.
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 Co-Author
 
-**Tagore**
+**Hemanth Sembilli**
 
-B.Tech Computer Science and Engineering  
-Machine Learning | Deep Learning | Computer Vision
+B.Tech Computer Science and Engineering
 
-Open to **Machine Learning Engineer**, **AI Engineer**, and **Research Engineer** opportunities.
 
-GitHub: https://github.com/tagorekanuri
+GitHub: https://github.com/hemanth-sembilli-1860
 
-LinkedIn: https://linkedin.com/in/tagorekanuri
-
-Email: tagore.kanuri@gmail.com
+LinkedIn: https://www.linkedin.com/in/hemanth-sembilli-961521311/
